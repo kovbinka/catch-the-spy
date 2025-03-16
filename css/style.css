@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background: url("../media/01.webp");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.main-container {
+  display: block;
+  padding: 0;
+}
+
+body h1 {
+  font-size: 80px;
+  padding: 0;
+}
+
+#score {
+  font-size: 40px;
+}
+
+#board {
+  margin-top: 30px;
+  width: 600px;
+  height: 600px;
+  background: url('../media/dark-back.jpg');
+  background-size: cover;
+  border: solid rgb(0, 0, 0);
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#board div {
+  width: 180px; 
+  height: 180px;
+  background-image: url("../media/pipe.png");
+  background-size: cover;
+}
+
+#board div img {
+  width: 66px;
+  height: 86px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#board div img.visible {
+  opacity: 1;
+}
