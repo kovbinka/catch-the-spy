@@ -39,7 +39,7 @@ function setSpy() {
   }
   
   let createSpy = document.createElement("img");
-  createSpy.src = "/media/Spy_Vs_Spy_.png";
+  createSpy.src = "media/Spy_Vs_Spy_.png";
 
   let num = getRandomTile();
   if (currCivilianTile && currCivilianTile.id == num) {
@@ -65,7 +65,7 @@ function setCivilian() {
   }
 
   let civilian = document.createElement("img");
-  civilian.src = "/media/civilian.png";
+  civilian.src = "media/civilian.png";
 
   let num = getRandomTile();
   if (currSpyTile && currSpyTile.id == num) {
